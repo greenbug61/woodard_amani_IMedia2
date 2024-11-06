@@ -7,55 +7,83 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff5e1;
+            background-color: #333;
             color: #000;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 800px;
+            background-color: #fff;
+            padding: 20px;
         }
         .header {
-            background-color: #cc0000;
-            color: white;
-            padding: 20px;
+            background-color: #ffcc00;
+            color: black;
             text-align: center;
+            padding: 20px;
             font-size: 24px;
         }
-        .content {
-            background-color: #fffacd;
-            padding: 20px;
-            margin: 20px;
+        .header img {
+            display: block;
+            margin: 10px auto;
         }
-        .link {
+        .link-section {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .link-section a {
             color: #0066c0;
             font-weight: bold;
+            text-decoration: none;
+        }
+        .content {
+            background-color: #e0e0e0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .video-section {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Amazon</h1>
-        <img src="amazon-logo.png" alt="Amazon Logo" width="100">
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Amazon</h1>
+            <img src="amazon-logo.png" alt="Amazon Logo" width="100">
+            <div class="link-section">
+                <p>Amazon (Amazon.com) is the world's largest online retailer and a prominent cloud service provider.</p>
+                <a href="https://www.amazon.com" target="_blank">Click Here to Visit Amazon</a>
+            </div>
+        </div>
 
-    <div class="content">
-        <p>Amazon (<span class="link">Amazon.com</span>) is the world's largest online retailer and a prominent cloud service provider.</p>
-        <a href="https://www.amazon.com" target="_blank" class="link">Click Here to Visit Amazon</a>
+        <div class="content">
+            <h2>Amazon Prime</h2>
+            <p>Amazon Prime is a membership that costs $99 annually, but here are some reasons it may be worth it to purchase the membership:</p>
+            <ul>
+                <li>Free 2-Day Shipping</li>
+                <li>Streaming Video</li>
+                <li>Prime Music</li>
+                <li>Unlimited Photo Storage</li>
+                <li>Prime Pantry</li>
+            </ul>
+        </div>
 
-        <h2>Amazon Prime</h2>
-        <p>Amazon Prime is a membership that costs $99 annually, but there are reasons it may be worth it to purchase the membership:</p>
-        <ul>
-            <li>Free 2-Day Shipping</li>
-            <li>Streaming Video</li>
-            <li>Prime Music</li>
-            <li>Unlimited Photo Storage</li>
-            <li>Prime Pantry</li>
-        </ul>
-
-        <h3>Amazon Video</h3>
-        <p>Below is a video that can help you decide if Amazon Prime is worth it.</p>
-        <video width="320" height="240" controls>
-            <source src="amazon-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video-section">
+            <h3>Amazon Video</h3>
+            <p>Here is a video that can help you decide if Amazon Prime is worth it.</p>
+            <video width="320" height="240" controls>
+                <source src="amazon-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 
 </body>
 </html>
+
